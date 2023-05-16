@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Poppins',sans-serif;
+ 
+}
+
+
+.img-circle {
+    width: 50%;
+}
+
+/*SIDE BAR*/
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: maroon;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+ .sidebar a:hover{
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+/*TOP NAVBAR*/
+.topnavbar {
+    margin-left: -46px;
+    overflow: hidden;
+    background-color: #6D0000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+  
+.topnavbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+  
+.topnavbar a:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+  
+.topnavbar-right {
+    float:right;
+    padding-right: 16%;
+}
+
+
+.main {
+    margin-left: 280px;
+    padding: 10px 16px;
+    height: auto;
+}
+
+/*CARD STYLE*/
+.style {
+    display: fixed;
+    position: inherit;
+    width: 100%;
+    padding: 5px 10px 10px 5px;
+    border-radius: 10px;
+    font-size: 50px;
+    background-color: white;
+    color: black;
+}
+
+/*CARD STYLE*/
+.style {
+    display: fixed;
+    position: inherit;
+    width: 100%;
+    padding: 5px 10px 10px 5px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: maroon;
+    color: white;
+}
+
+
+/* STYLE*/
+.stylebox {
+   display: fixed;
+   position: inherit;
+   border-radius: 10px;
+   border: 1px solid #C5C5C5;
+}
+
+/*Time Display Text*/
+.timeText {
+    display: fixed;
+    position: inherit;
+    width: 100%;
+    font-size: 50px;
+    color: black;
+    float: right;
+    text-align: right;
+}
+
+/*Day Date Display Text*/
+.daydateText {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+/*TIME IN TIME OUT BUTTON*/
+.btnposition {
+    float: right;
+    text-align: center;
+}
+
+.leftText {
+    font-size: 16px;
+    color: black;
+    float: left;
+    text-align: left;
+    font-weight: 500;
+}
+
+/*BUTTON*/
+.button {
+    border: none;
+    color: white;
+    padding: 4px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* standby displayed button */
+.hbutton {
+    background-color: #6B6B6B;
+    color: white;
+    font-size: 16px;
+}
+        
+/* button when clicked or pointed */
+.hbutton:hover {
+    background-color:  rgb(235, 187, 32);
+    color: black;       
+}
+
+/*disable button*/
+.disable-btn {
+    pointer-events:none; /*This makes it not clickable*/
+    opacity:0.2;         /*This grays it out to look disabled*/
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.main {margin-left: 0;}
+  }
+  
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+}

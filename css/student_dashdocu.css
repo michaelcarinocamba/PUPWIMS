@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Poppins',sans-serif;
+ 
+}
+
+
+.img-circle {
+    width: 50%;
+}
+
+/*SIDE BAR*/
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: maroon;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+.sidebar a:hover{
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.sidebar_bg {
+    z-index: -1; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0; left: 0; 
+    width:100%; 
+    height: 100%;
+}
+
+
+/*TOP NAVBAR*/
+.topnavbar {
+    margin-left: -46px;
+    overflow: hidden;
+    background-color: #6D0000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+  
+.topnavbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+  
+.topnavbar a:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+  
+.topnavbar-right {
+    float:right;
+    padding-right: 16%;
+}
+
+
+.main {
+    margin-left: 280px;
+    padding: 10px 16px;
+    height: auto;
+}
+
+/*TEXT*/
+a.text {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*ICON STYLE*/
+.icon {
+    padding: 20px 10px 30px 10px;
+    color: black;
+}
+
+/*CARD STYLE*/
+.style {
+    display: fixed;
+    position: inherit;
+    width: 100%;
+    padding: 5px 10px 20px 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #C5C5C5;
+    transition: transform .2s ease; /* Animation */
+}
+
+.style:hover {
+    transform: scale(1.1);
+}
+
+/*BUTTON*/
+.button {
+    border: none;
+    color: white;
+    padding: 4px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* standby displayed button */
+.hbutton {
+    background-color: #6B6B6B;
+    color: white;
+    font-size: 16px;
+}
+        
+/* button when clicked or pointed */
+.hbutton:hover {
+    background-color:  rgb(235, 187, 32);
+    color: black;       
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.main {margin-left: 0;}
+  }
+  
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+}

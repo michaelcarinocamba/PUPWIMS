@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+/* HTML BODY */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+section {
+  position:relative;
+  width:100%;
+  height:100vh;
+  display:flex;
+}
+
+section .Background {
+  border-radius: 20px;
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  z-index: 3;
+}
+    
+section .Background:before {
+    content: '';
+    position:absolute;
+    top:0;
+    Left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(225deg,#2f2323,#6d1d35);
+    z-index:1;
+    mix-blend-mode:screen;
+}
+
+section .Background img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+section .Content {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:50%;
+  height:100%;
+  background-color: maroon;
+}
+
+section .bg-content {
+  display: none;
+}
+
+section .Content .p
+{
+    color:maroon;
+    margin-bottom: 30px;
+    display:inline-block;
+    Letter-spacing:1px;
+    font-size: 10px;
+}
+
+/* button properties */
+section .button {
+    display: inline-block;
+    width: 80%;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+	color: black;
+	padding: 18px 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px 3px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+		
+/*standby displayed button */
+section .hbutton {
+	background-color: white;
+	color: black;
+	font-size: 18px;
+}
+		
+/*button when clicked or pointed */
+section .hbutton:hover {
+	background-color: rgb(235, 187, 32);
+	color: white;
+}
+    
+section .pupsjlogo {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  position: sticky;
+  display: block;
+  margin-top:0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 10px 30px 10px;
+}
+
+section .text {
+    color: white;
+    font-size: 30px;
+}
+
+section .text1 {
+    color: white;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+section .text-block {
+  position: absolute;
+  font-size: clamp(0.875rem, -0.7656rem + 5.25vw, 2.1875rem);
+  top: 50px;
+  right: 20px;
+  background-color: #6D0000;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+    text-align: center;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+
+@media screen and (max-width: 767.98px) {
+  p::before {
+  content: "INTERNSHIP MANAGEMENT SYSTEM";
+  display: inline-block;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  }
+  .row, .side, .main {   
+    flex-direction: column;
+  }
+ 
+  section .Background
+  {
+    display: none;
+  }
+  
+
+  section .Content
+  {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background-color: maroon;
+    z-index: 1;
+    background-image: url("../images/maroon-bg.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  section .pupsjlogo
+  {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    position: sticky;
+    display: block;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px 30px 10px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .row, .side, .main {   
+    flex-direction: column;
+  }
+  section .text-block
+  {
+    flex-direction: column;
+    margin:auto;
+    text-align: center;
+    font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.25rem);
+
+  }
+  section .Background {
+    border-radius: 20px;
+    position:absolute;
+    width:100%;
+    max-width: 900.98px;
+    height:100%;
+    z-index: 3;
+  }
+  section .Content {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background-color: maroon;
+  }
+  section .pupsjlogo
+  {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    position: sticky;
+    display: block;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px 30px 10px;
+  }
+}
+
+@media screen and (max-width:1199.98px) {
+  .row, .side, .main {   
+    flex-direction: column;
+  }
+  section .text-block
+  {
+    flex-direction: column;
+    margin:auto;
+    text-align: center;
+    font-size: clamp(0.875rem, 0.0156rem + 2.75vw, 1.5625rem);
+
+  }
+  section .Background {
+    border-radius: 20px;
+    position:relative;
+    width:100%;
+    max-width: 991.98px;
+    height:100%;
+    z-index: 3;
+  }
+  section .Content {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background-color: maroon;
+  }
+  section .pupsjlogo
+  {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    position: sticky;
+    display: block;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px 30px 10px;
+  }
+}
+@media screen and (max-width:1399.98px) {
+  .row, .side, .main {   
+    flex-direction: column;
+  }
+  section .text-block
+  {
+    flex-direction: column;
+    margin:auto;
+    text-align: center;
+    font-size: clamp(0.875rem, -0.5313rem + 4.5vw, 2rem);
+
+  }
+  section .Background {
+    border-radius: 20px;
+    position:relative;
+    width:135%;
+
+    height:100%;
+    z-index: 3;
+  }
+  section .Content {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:110%;
+    height:100%;
+    background-color: maroon;
+  }
+  section .pupsjlogo
+  {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    position: sticky;
+    display: block;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px 30px 10px;
+  }
+}
+
+
+
+

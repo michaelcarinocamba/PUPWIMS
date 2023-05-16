@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Poppins',sans-serif;
+ 
+}
+
+section
+{
+
+ position:relative;
+ width:100%;
+ height:100vh;
+ display:flex;
+ 
+}
+
+section .img-circle
+{
+    width: 50%;
+    
+}
+
+section .Background
+{
+    border-radius: 20px;
+ position:relative;
+ width:100%;
+ height:100%;
+}
+section .Background:before
+{
+ content: '';
+ position:absolute;
+ top:0;
+ Left:0;
+ width:100%;
+ height:100%;
+ background:linear-gradient(225deg,#363636,#be3760);
+ z-index:1;
+ mix-blend-mode:screen;
+}
+
+section .Background img
+{
+    
+ position:absolute;
+ top: 0;
+ left: 0;
+ width:100%;
+ height:100%;
+ object-fit: cover;
+}
+
+section .Content
+{
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:40%;
+    height:100%;
+    background-color: maroon;
+}
+
+section .Content .form
+{
+    width: 75%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px 30px 10px;
+}
+
+section .Content .form h1
+{
+    color:maroon;
+    font-weight:600;
+    display:inline-block;
+    Letter-spacing:1px;
+    font-size: 25px;
+}
+
+section .Content .form h3
+{
+    color:maroon;
+    margin-bottom: 30px;
+    display:inline-block;
+    Letter-spacing:1px;
+    font-size: 10px;
+}
+
+section .Content .form h6
+{
+    color:maroon;
+    margin-bottom: 30px;
+    display:inline-block;
+    Letter-spacing:1px;
+    font-size: 10px;
+}
+
+section .Content .form .error1
+{
+    color:maroon;
+    text-indent: 5px;
+    margin-bottom: 10px;
+    display:inline-block;
+    Letter-spacing:1px;
+    font-size: 12px;
+}
+section .Content .form .error2
+{
+    color:maroon;
+    text-indent: 5px;
+    margin-bottom: 10px;
+    display:inline-block;
+    Letter-spacing:1px;
+    font-size: 12px;
+}
+section .Content .form .error3
+{
+    color:maroon;
+    text-indent: 5px;
+    margin-bottom: 10px;
+    display:inline-block;
+    Letter-spacing:1px;
+    font-size: 12px;
+}
+section .Content .form .error4
+{
+    color:maroon;
+    text-indent: 5px;
+    margin-bottom: 10px;
+    display:inline-block;
+    Letter-spacing:1px;
+    font-size: 12px;
+}
+
+
+
+section .Content .form .input
+{
+    
+    margin-bottom: 20px;
+}
+
+section .Content .form .input span
+{
+
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+section .Content .form .input p
+{
+
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 1px;
+    
+}
+section .Content .form a
+{
+    color:maroon;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 1px;
+    
+}
+section .Content .form .input h6
+{
+
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 8px;
+    letter-spacing: 1px;
+    
+}
+
+section .Content .form .input input
+{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #7e7d7d;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #070707;
+    background: transparent;
+    border-radius: 10px; 
+}
+
+section .Content .form .input select 
+{
+    width: 32%;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #7e7d7d;
+    font-size: 9px;
+
+    color: #131313;
+    background: transparent;
+    border-radius: 10px;
+}
+
+section .Content .form .input button
+{
+    width: 32%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    margin-top: 5px;
+    border: 1px solid #7e7d7d;
+    background-color: #dfdfdf;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 30px;
+}
+
+section .Content .form .input .button 
+{
+    background: #7e0606;
+    width: 40%;
+    
+}
+
+
+
+   /* button properties */
+   section .button {
+    display: inline-block;
+    width: 80%;
+		background-color: white;
+		border: none;
+    border-radius: 10px;
+		color: black;
+		padding: 18px 30px;
+		text-align: center;
+		text-decoration: none;
+		margin: 10px 3px;
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+		cursor: pointer;
+
+    }
+		
+    /* standby displayed button */
+    section .hbutton {
+		background-color: white;
+		color: black;
+		font-size: 20px;
+	}
+		
+    /* button when clicked or pointed */
+    section .hbutton:hover {
+		background-color: rgb(235, 187, 32);
+		color: white;
+        
+	}
+
+    @media screen and (max-width: 767.98px) {
+
+        .row, .side, .main {   
+          flex-direction: column;
+        }
+       
+        section .Background
+        {
+          display: none;
+        }
+        
+      
+        section .Content
+        {
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          width:80%;
+          height:90%;
+          background-color: maroon;
+          z-index: 1;
+          background-image: url("../images/maroon-bg.png");
+          background-size: cover;
+          background-position: center;
+        }
+      
+        section .pupsjlogo
+        {
+          width: 40%;
+          max-width: 200px;
+          height: auto;
+          position: sticky;
+          display: block;
+          margin-top:0px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0px 10px 30px 10px;
+        }
+      }
+      
+      @media screen and (max-width: 991.98px) {
+        .row, .side, .main {   
+          flex-direction: column;
+        }
+        section .text-block
+        {
+          flex-direction: column;
+          margin:auto;
+          text-align: center;
+          font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.25rem);
+      
+        }
+        section .Background {
+          border-radius: 20px;
+          position:absolute;
+          width:100%;
+          max-width: 900.98px;
+          height:100%;
+          z-index: 3;
+        }
+        section .Content {
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          width:100%;
+          height:100%;
+          background-color: maroon;
+        }
+        section .pupsjlogo
+        {
+          width: 40%;
+          max-width: 400px;
+          height: auto;
+          position: sticky;
+          display: block;
+          margin-top:0px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0px 10px 30px 10px;
+        }
+      }
+      
+      @media screen and (max-width:1199.98px) {
+        .row, .side, .main {   
+          flex-direction: column;
+        }
+        section .text-block
+        {
+          flex-direction: column;
+          margin:auto;
+          text-align: center;
+          font-size: clamp(0.875rem, 0.0156rem + 2.75vw, 1.5625rem);
+      
+        }
+        section .Background {
+          border-radius: 20px;
+          position:relative;
+          width:100%;
+          max-width: 991.98px;
+          height:100%;
+          z-index: 3;
+        }
+        section .Content {
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          width:100%;
+          height:100%;
+          background-color: maroon;
+        }
+        section .pupsjlogo
+        {
+          width: 40%;
+          max-width: 400px;
+          height: auto;
+          position: sticky;
+          display: block;
+          margin-top:0px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0px 10px 30px 10px;
+        }
+      }
+      @media screen and (max-width:1399.98px) {
+        .row, .side, .main {   
+          flex-direction: column;
+        }
+        section .text-block
+        {
+          flex-direction: column;
+          margin:auto;
+          text-align: center;
+          font-size: clamp(0.875rem, -0.5313rem + 4.5vw, 2rem);
+      
+        }
+        section .Background {
+          border-radius: 20px;
+          position:relative;
+          width:100%;
+      
+          height:100%;
+          z-index: 3;
+        }
+        section .Content {
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          width:100%;
+          height:100%;
+          background-color: maroon;
+        }
+        section .pupsjlogo
+        {
+          width: 40%;
+          max-width: 400px;
+          height: auto;
+          position: sticky;
+          display: block;
+          margin-top:0px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0px 10px 30px 10px;
+        }
+      }
+      
+      
+      
+      
+      
